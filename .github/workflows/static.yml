@@ -40,7 +40,7 @@ jobs:
         run: |
           mkdir -p ./deploy
           cp ./src/index.html ./deploy/
-          cp -R ./public/* ./deploy/
+          cp -R ./public ./deploy/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
